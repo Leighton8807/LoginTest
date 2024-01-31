@@ -21,13 +21,13 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.use(myconnection(mysql, {
-    host:'localhost',
-    user: 'root',
-    password: '',
-    port: '3307',
-    database: 'nodelogin'
-}));
+// app.use(myconnection(mysql, {
+//     host:'localhost',
+//     user: 'root',
+//     password: '',
+//     port: '3307',
+//     database: 'nodelogin'
+// }));
 
 app.use(session({
     secret: 'secret',
